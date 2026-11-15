@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+.ruff_cache/
+demo/
+
+# Local configuration and research notes are not project source.
+.env
+.env.*
+.aws/
+private/
+artifacts/
+*handover*.md

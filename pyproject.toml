@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gis-terrain-lab"
+version = "0.1.0"
+description = "Exchange georeferenced elevation grids and road masks with terrain editors."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=1.26", "rasterio>=1.4"]
+
+[project.urls]
+Repository = "https://github.com/jgn1982/gis-terrain-lab"
+
+[project.scripts]
+gis-terrain-lab = "gis_terrain_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
